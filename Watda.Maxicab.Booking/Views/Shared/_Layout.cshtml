@@ -8,11 +8,14 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    
+    @Styles.Render("~/Content/boostrap.min.css")
+    @Styles.Render("~/Content/bootstrap-theme.min.css")
 </head>
 <body>
     <div> 
         @RenderBody()
+        @Scripts.Render("~/Scripts/jquery-1.9.0.min.js")
+
     </div>
 </body>
 </html>
